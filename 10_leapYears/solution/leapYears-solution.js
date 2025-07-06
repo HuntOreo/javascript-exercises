@@ -3,8 +3,7 @@ const leapYears = function (year) {
   const isCentury = year % 100 === 0;
   const isYearDivisibleByFourHundred = year % 400 === 0;
 
-  if (
-    isYearDivisibleByFour &&
+  if (isYearDivisibleByFour &&
     (!isCentury || isYearDivisibleByFourHundred)
   ) {
     return true;
